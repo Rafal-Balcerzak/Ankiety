@@ -11,9 +11,10 @@ class Ankiety extends React.Component{
     constructor(props){
         super(props);
         this.state = {
+                pobierzIsClick: false,
                 ListaAnkiety: [],
                 nazwyAnkiet: [],
-                wybranaAnkieta: "Brak",
+                wybranaAnkieta: "",
                 ipKlienta: "",
                 pytanie: null,
                 odp: null,
@@ -53,7 +54,7 @@ class Ankiety extends React.Component{
             ListaAnkiety: dane
             
         }))
-        
+        this.setState({pobierzIsClick: true})
     }
     zmianaWybranejAnkiety(event) {
         
@@ -124,11 +125,10 @@ class Ankiety extends React.Component{
                     </select>
 
                 </div>
-                
+            {(this.state.wybranaAnkieta == "" || this.state.pobierzIsClick == false) ? "" : 
                 <AnkietyPytania pytania={this.state.ListaAnkiety} nazwaWybranejAnkiety={this.state.wybranaAnkieta}
                 wybranaAnkieta={this.state.wybranaAnkieta} wyslijJednaAnkiete={this.wyslijJednaAnkiete} ip={this.state.ipKlienta}/>
-                
-            
+            }
             </div>
         )
     }

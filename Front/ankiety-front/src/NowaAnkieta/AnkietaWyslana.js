@@ -1,7 +1,7 @@
 import React from 'react';
 import image from "./sending-surveys.png";
 import { Link } from 'react-router-dom';
-import "./Popup.css"
+import "./Popup.css";
 
 
 const AnkietaWyslana = props => {

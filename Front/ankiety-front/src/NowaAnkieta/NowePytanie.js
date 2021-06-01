@@ -3,6 +3,8 @@ import NoweOdpowiedzi from './NoweOdpowiedzi.js'
 
 
 
+
+
 class NowePytanie extends React.Component {
   constructor(props){
     super(props);

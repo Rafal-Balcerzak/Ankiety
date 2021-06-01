@@ -10,6 +10,7 @@ import NowaAnkieta from './NowaAnkieta/NowaAnkieta.js'
 import Wyniki from './Wyniki.js';
 import React, { Component } from 'react';
 import AnkietaWyslana from './NowaAnkieta/AnkietaWyslana';
+import WypelnionaAnkieta from './WypelnionaAnkieta';
 
 class App extends Component {
   state = {
@@ -29,8 +30,10 @@ class App extends Component {
     }
 
     return (
+      <>
+      <Router>
       <div className="App">
-        <Router>
+        
           <Header />
           <main>
             <Route path="/" component={StronaGlowna} exact />
@@ -39,11 +42,15 @@ class App extends Component {
             <Route path="/NowaAnkieta" component={NowaAnkieta} />
             <Route path="/Wyniki" component={Wyniki} />
             <Route path="/AnkietaWyslana" component={AnkietaWyslana} />
+            <Route path="/WypelnionaAnkieta" component={WypelnionaAnkieta} />
           </main>
-        </Router>
-        <Footer />
+       
+        
 
       </div>
+      <Footer />
+      </Router>
+      </>
     );
   }
 

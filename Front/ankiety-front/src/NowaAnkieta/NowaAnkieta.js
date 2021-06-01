@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Popup from './Popup.js';
-import "./Popup.css"
+import "./Popup.css";
+
+
 
  const trescOdpowiedzi = []; 
 

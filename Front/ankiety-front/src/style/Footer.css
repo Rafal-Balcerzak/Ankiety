@@ -1,4 +1,29 @@
 @import '~mdb-ui-kit/css/mdb.min.css';
 .text-center {
     background-color: #858484;
+    
+    
+}
+.text-center{
+    
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 200px;
+}
+.linksMenu{
+    margin: 6px;
+    color: aliceblue;
+
+}
+.linksMenu a{
+    font: smaller;
+    color: aliceblue;
+    margin: 2px;
+}
+footer{
+    margin-top: 50px;
 }
