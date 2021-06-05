@@ -28,7 +28,7 @@ class Wyniki extends Component {
                         })} 
 
                     </select>
-                        <div >{this.state.wybranaAnkieta}</div>
+                        <h1 >{this.state.wybranaAnkieta}</h1>
 
                         {this.state.ListaAnkiety.map(ankiety =>{
                             return(
@@ -49,7 +49,6 @@ class Wyniki extends Component {
                     
                       
                             </div>
-                            <br></br>
                             </>
                             )
                         })}

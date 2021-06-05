@@ -103,9 +103,9 @@ class Ankiety extends React.Component{
                       {this.state.odpowiedzKlienta}
                 <div className="buttonContainer">
                     
-                      <div data-tip="Ankieta jest w pełni anonimowa. Pobieramy IP, ponieważ tylko raz możesz wypełnić jedną ankiete." className="TwojeIp">
+                      <div data-tip="Ankieta jest w pełni anonimowa. Pobieramy IP, ponieważ możesz wypełnić jedną ankietę jeden raz." className="TwojeIp">
                         {this.state.ipKlienta==="" ? "Pobieranie adresu IP..." : "Twoje IP: "+this.state.ipKlienta}
-                        <div className="OpisIP">Możesz tylko taz wypełnić<br></br> jedną ankietę   </div> 
+                        <div className="OpisIP">Możesz tylko taz wypełnić<br></br>jedną ankietę tylko raz</div> 
                     </div>
                     <ReactTooltip place="top" type="dark" effect="float"/>
                     <button onClick={this.czysc} className="btn btn-dark">Czyść</button>

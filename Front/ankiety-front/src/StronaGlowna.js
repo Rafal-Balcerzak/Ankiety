@@ -8,27 +8,15 @@ import { Link } from 'react-router-dom';
 class StronaGlowna extends React.Component {
     render() {
         return (
-            <div>
-                <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+            <main>
 
-                    <div className="carousel-inner" role="listbox">
 
-                        <div className="carousel-item active" >
-                            <div className="carousel-caption d-none d-md-block">
-                                <h3 className="display-4">Wolne Ankiety</h3>
-                                <p className="lead">Ta strona pozwala tworzyć i wypełniać darmowe ankiety</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br></br><br></br>
                 <h2>Witamy na naszej stronie z darmowymi ankietami</h2>
                 <h4>Tutaj możesz dodawać ankiety zupełnie za darmo oraz wypełniać istniejące ankiety anonimowo.</h4>
-                <br></br>
+
 
                 <img className="box" src="https://super-monitoring.com/blogpl/wp-content/uploads/2020/12/social-polls.png" height="230px" alt="Ankiety obrazek"></img>
 
-                <br></br><br></br>
                 <div>
                     <Link to="/NowaAnkieta">
                         <button type="button" className="buttonBox">
@@ -43,9 +31,8 @@ class StronaGlowna extends React.Component {
                     </button>
                     </Link>
                 </div>
-                <br></br><br></br>
-
-            </div>
+           
+            </main>
         )
     }
 }
